@@ -66,7 +66,6 @@ if os.path.exists(arquivo):
             dia_para_clicar = int(linhas[0].strip())
             ultima_execucao = linhas[1].strip()
 
-#testando outras partes
 # 2. Verifica se a data atual é diferente da última execução
 if hoje.strftime("%Y-%m-%d") != ultima_execucao:
     # Adiciona esta verificação para evitar o erro "ValueError" na primeira execução
@@ -116,4 +115,6 @@ if ultimo_arquivo.endswith(".zip"):
     with zipfile.ZipFile(ultimo_arquivo, 'r') as zip_ref:
         zip_ref.extractall(pasta_relatorios + r"\extraido")
         print("Arquivo extraido")
+
+# parte não está funcionando, se faz necessário atualização da página para a extração do link
 time.sleep(50)
