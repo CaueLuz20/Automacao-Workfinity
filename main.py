@@ -30,7 +30,7 @@ navegador.find_element("tag name", "button").click()
 navegador.find_element("class name", "wkf-brand").click()
 esperar = WebDriverWait(navegador, 10).until(
     EC.element_to_be_clickable(("xpath", "/html/body/div[2]/div/nav/div/div[2]/div/div[1]/ul/li[2]/a"))).click()
-wait = WebDriverWait(navegador, 10).until(
+esperar = WebDriverWait(navegador, 10).until(
     EC.element_to_be_clickable(("link text","Ordem de Serviço"))).click()
 navegador.find_element("xpath", '//*[@id="filtersDiv"]/div[1]/div[3]/div/span/span[1]/span/ul/li/input').send_keys("Encaminhado")
 time.sleep(5)
