@@ -99,7 +99,8 @@ navegador.find_element("xpath", '//*[@id="filters_form"]/button').click()
 navegador.find_element("xpath", '//*[@id="resultListTab"]/div/div/form/div[1]/div/div[2]/div/div[3]/button').click()
 navegador.find_element("xpath", '//*[@id="resultListTab"]/div/div/form/div[1]/div/div[2]/div/div[3]/ul/li[2]/a').click()
 time.sleep(60)
-navegador.navigate().refresh()
+navegador.refresh()
+pya.click(x=1133, y=315)
 
 
 # parte da extração de relatorio
@@ -117,4 +118,4 @@ if ultimo_arquivo.endswith(".zip"):
         print("Arquivo extraido")
 
 # parte não está funcionando, se faz necessário atualização da página para a extração do link
-time.sleep(50)
+time.sleep(100)
